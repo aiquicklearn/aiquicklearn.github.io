@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
+  <link rel="mask-icon" href="/images/favicon.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"aiquicklearn.us.kg","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":220,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="引言 AI已经在影响着人类未来的发展了，渺小的个人，要么置之不理、假装与己无关，要么一知半解、终被时代潮流抛在后面，要么迎头赶上这趟时代快速列车。而我选择第三个选项。所以，创建此个人博客，以此记录这段旅程。 AI is shaping humanity’s future. I, as an individual, refuse to be left behind. I’m not choosing">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="Build Records of Blog Created by Hexo+Github Pages+Next">
+<meta property="og:url" content="http://aiquicklearn.us.kg/post/20241226115946.html">
+<meta property="og:site_name" content="AIQuickLearn">
+<meta property="og:description" content="引言 AI已经在影响着人类未来的发展了，渺小的个人，要么置之不理、假装与己无关，要么一知半解、终被时代潮流抛在后面，要么迎头赶上这趟时代快速列车。而我选择第三个选项。所以，创建此个人博客，以此记录这段旅程。 AI is shaping humanity’s future. I, as an individual, refuse to be left behind. I’m not choosing">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://images.aiquicklearn.us.kg/imgs/202412/hexo.png">
+<meta property="og:image" content="https://images.aiquicklearn.us.kg/imgs/202412/issue1.png">
+<meta property="og:image" content="https://images.aiquicklearn.us.kg/imgs/202412/solution1.png">
+<meta property="og:image" content="https://images.aiquicklearn.us.kg/imgs/202412/solution2.png">
+<meta property="og:image" content="https://images.aiquicklearn.us.kg/imgs/202412/solution3.png">
+<meta property="og:image" content="https://images.aiquicklearn.us.kg/imgs/202412/cloudflare-0.png">
+<meta property="og:image" content="https://images.aiquicklearn.us.kg/imgs/202412/cloudflare-1.png">
+<meta property="og:image" content="https://images.aiquicklearn.us.kg/imgs/202412/cloudflare-2.png">
+<meta property="og:image" content="https://images.aiquicklearn.us.kg/imgs/202412/cloudflare-3.png">
+<meta property="og:image" content="https://images.aiquicklearn.us.kg/imgs/202412/homeb-2-1.png">
+<meta property="og:image" content="https://images.aiquicklearn.us.kg/imgs/202412/homeb-2-2-5214861.png">
+<meta property="og:image" content="https://images.aiquicklearn.us.kg/imgs/202412/homeb-4.png">
+<meta property="og:image" content="https://images.aiquicklearn.us.kg/imgs/202412/next-1.png">
+<meta property="og:image" content="https://images.aiquicklearn.us.kg/imgs/202412/next-2.png">
+<meta property="og:image" content="https://images.aiquicklearn.us.kg/imgs/202412/PicGo.png">
+<meta property="article:published_time" content="2024-12-26T03:59:46.000Z">
+<meta property="article:modified_time" content="2024-12-26T15:24:30.684Z">
+<meta property="article:author" content="APersonWhoLovesAI">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="NexT">
+<meta property="article:tag" content="Github">
+<meta property="article:tag" content="Cloudflare">
+<meta property="article:tag" content="us.kg">
+<meta property="article:tag" content="Blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://images.aiquicklearn.us.kg/imgs/202412/hexo.png">
+
+
+<link rel="canonical" href="http://aiquicklearn.us.kg/post/20241226115946.html">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://aiquicklearn.us.kg/post/20241226115946.html","path":"post/20241226115946.html","title":"Build Records of Blog Created by Hexo+Github Pages+Next"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Build Records of Blog Created by Hexo+Github Pages+Next | AIQuickLearn</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">AIQuickLearn</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Learn AI Fast,Stay Ahead</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">6</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">1</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A7%81%E6%9C%89%E5%9F%9F%E5%90%8D-Cloudflare"><span class="nav-number">2.</span> <span class="nav-text">私有域名 + Cloudflare</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%AF%E5%90%A6%E8%B4%AD%E4%B9%B0%E7%A7%81%E6%9C%89%E5%9F%9F%E5%90%8D"><span class="nav-number">2.1.</span> <span class="nav-text">是否购买私有域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%81%E6%9C%89%E5%9F%9F%E5%90%8D%E6%89%98%E7%AE%A1%E5%88%B0Cloudflare"><span class="nav-number">2.2.</span> <span class="nav-text">私有域名托管到Cloudflare</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E6%9E%90%E7%A7%81%E6%9C%89%E5%9F%9F%E5%90%8D"><span class="nav-number">2.3.</span> <span class="nav-text">解析私有域名</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAHexo-Github-Pages%E6%89%98%E7%AE%A1"><span class="nav-number">3.</span> <span class="nav-text">本地搭建Hexo + Github Pages托管</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4"><span class="nav-number">3.1.</span> <span class="nav-text">具体步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%EF%BC%89%E5%8F%AF%E5%8F%82%E8%80%83Hexo%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%9A"><span class="nav-number">3.1.1.</span> <span class="nav-text">1）可参考Hexo官方文档：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2%EF%BC%89%E6%88%96%E8%80%85%E5%8F%82%E8%80%83%E4%B8%8B%E6%96%B9%E7%BD%91%E5%8F%8B%E6%96%87%E7%AB%A0%EF%BC%9A"><span class="nav-number">3.1.2.</span> <span class="nav-text">2）或者参考下方网友文章：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3%EF%BC%89%E6%88%96%E8%80%85%E5%8F%82%E8%80%83YouTube%E8%A7%86%E9%A2%91%EF%BC%9A"><span class="nav-number">3.1.3.</span> <span class="nav-text">3）或者参考YouTube视频：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98-%E5%AE%89%E8%A3%85Hexo%E7%9A%84%E6%9D%83%E9%99%90%E4%B8%8D%E8%B6%B3"><span class="nav-number">3.2.</span> <span class="nav-text">问题-安装Hexo的权限不足</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%81%E6%9C%89%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E3%80%81%E5%B9%B6%E5%85%B3%E8%81%94%E5%88%B0Github%E5%9F%9F%E5%90%8D"><span class="nav-number">3.3.</span> <span class="nav-text">私有域名解析、并关联到Github域名</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1%EF%BC%89%E6%89%BE%E5%88%B0github%E7%9A%844%E4%B8%AA%E5%9F%9F%E5%90%8DIP%EF%BC%88Github%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%EF%BC%89"><span class="nav-number">3.3.1.</span> <span class="nav-text">1）找到github的4个域名IP（Github官方文档）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2%EF%BC%89%E7%99%BB%E9%99%86Cloudflare%E6%93%8D%E4%BD%9C"><span class="nav-number">3.3.2.</span> <span class="nav-text">2）登陆Cloudflare操作</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Hexo%E4%B8%BB%E9%A2%98-NexT"><span class="nav-number">4.</span> <span class="nav-text">安装Hexo主题-NexT</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%981-Github%E7%9A%84DNS%E8%A2%AB%E6%B1%A1%E6%9F%93%EF%BC%8C%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5"><span class="nav-number">4.1.</span> <span class="nav-text">问题1-Github的DNS被污染，无法连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%982-Github%E7%9A%84DNS%E8%A2%AB%E6%B1%A1%E6%9F%93%EF%BC%8C%E6%97%A0%E6%B3%95%E8%BF%9E%E6%8E%A5"><span class="nav-number">4.2.</span> <span class="nav-text">问题2-Github的DNS被污染，无法连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%983-%E7%BC%BA%E5%B0%91Xcrun%E7%9A%84Command-Line-Tools"><span class="nav-number">4.3.</span> <span class="nav-text">问题3-缺少Xcrun的Command Line Tools</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%984-%E8%BF%98%E6%98%AF%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85Homebrew"><span class="nav-number">4.4.</span> <span class="nav-text">问题4-还是无法安装Homebrew</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AENexT"><span class="nav-number">5.</span> <span class="nav-text">配置NexT</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%981-NexT%E5%8F%96%E6%B6%88%E4%BA%86%E6%94%AF%E6%8C%81%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6Valine"><span class="nav-number">5.1.</span> <span class="nav-text">问题1-NexT取消了支持评论插件Valine</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%982-%E6%9C%AC%E5%9C%B0localhost%E6%9F%A5%E7%9C%8B%E9%A1%B5%E9%9D%A2%E5%8F%98%E7%A9%BA%E7%99%BD"><span class="nav-number">5.2.</span> <span class="nav-text">问题2-本地localhost查看页面变空白</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8Typora-PicGo%E9%85%8D%E7%BD%AE%E5%9B%BE%E7%89%87%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0"><span class="nav-number">6.</span> <span class="nav-text">使用Typora+PicGo配置图片自动上传</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="APersonWhoLovesAI"
+      src="/uploads/avatar.png">
+  <p class="site-author-name" itemprop="name">APersonWhoLovesAI</p>
+  <div class="site-description" itemprop="description">Your Gateway to AI Trends and Learning</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="mailto:aiquicklearn@protonmail.com" title="E-Mail → mailto:aiquicklearn@protonmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://aiquicklearn.us.kg/post/20241226115946.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.png">
+      <meta itemprop="name" content="APersonWhoLovesAI">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AIQuickLearn">
+      <meta itemprop="description" content="Your Gateway to AI Trends and Learning">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Build Records of Blog Created by Hexo+Github Pages+Next | AIQuickLearn">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Build Records of Blog Created by Hexo+Github Pages+Next
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-12-26 11:59:46" itemprop="dateCreated datePublished" datetime="2024-12-26T11:59:46+08:00">2024-12-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Blog/" itemprop="url" rel="index"><span itemprop="name">Blog</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Word count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Word count in article: </span>
+      <span>3.2k</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>12 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><blockquote>
+<p>AI已经在影响着人类未来的发展了，渺小的个人，要么置之不理、假装与己无关，要么一知半解、终被时代潮流抛在后面，要么迎头赶上这趟时代快速列车。而我选择第三个选项。所以，创建此个人博客，以此记录这段旅程。</p>
+<p>AI is shaping humanity’s future. I, as an individual, refuse to be left behind. I’m not choosing ignorance or apathy; I’m choosing to engage. This blog records my journey with AI.【Translated by Gemini which is so good at translating】</p>
+</blockquote>
+<hr>
+<p>我并不懂代码技术，所以搜索了很多适合小白的方案后，经过对比，选择了Github Pages、Markdown、Hexo和NexT来建站，图床则用PicGo、Typora这个组合，主要原因如下：</p>
+<ul>
+<li>Github支持免费的静态页面托管，网站部署和发布都很简单，小白也可上手。不用关心服务器等资源投入</li>
+<li>Hexo是一个开源的、支持Markdown语言、受网友欢迎的博客框架，一直在持续更新，支持各种插件、主题，参与贡献的网友众多。</li>
+<li>nexT是Hexo框架下的一个主题，搜索时发现多数网友都在推荐，且持续更新中。</li>
+<li>PicGo+Typora可以实现写文章添加图片时，可将图片自动从本地push到github、并将文章中的图片路径替换为网址链接。而Typora本身是个很好用的markdown语言编辑器，所写即所见所得，达到沉浸式写作体验。</li>
+</ul>
+<span id="more"></span>
+
+
+
+<p>本文重点是记录我在搭建个人博客过程中出现的问题，有些问题是搜索了很多帖子才解决的，虽然解决之后再回头看，发现问题都很小，但过程比较磨人，尤其是对于不懂代码的小白来说，所以分享出来。</p>
+<p>为了<strong>不偏离本网站AI主题</strong>，同时建站过程都是通过网络自学完成，为了也践行互联网分享精神，所有建站环节的具体步骤就不一一细致展开了，建议阅读每个环节所列的推荐文章（不用担心，这些文章都经过了我实践检验，正确且可操作😊）。 </p>
+<h2 id="私有域名-Cloudflare"><a href="#私有域名-Cloudflare" class="headerlink" title="私有域名 + Cloudflare"></a>私有域名 + Cloudflare</h2><hr>
+<h3 id="是否购买私有域名"><a href="#是否购买私有域名" class="headerlink" title="是否购买私有域名"></a>是否购买私有域名</h3><p>如果你并不在意网站域名是否独特，可以忽略此部分内容。</p>
+<p>如果你想拥有一个独特域名，可以<strong>买一个、或者注册免费域名</strong>。</p>
+<p>1)<strong>购买域名</strong>：只要购买后一直付钱，域名就一直是你的。免费域名，平台有倒闭风险。 付费域名网站，对比下来，<a target="_blank" rel="noopener" href="https://www.namecheap.com/">namecheap</a>是性价比最高、支持域名最全的。有需要可去看看。</p>
+<p><strong>虽然“免费的最贵”，但有免费的情况下，还是想试试，怎么办？</strong></p>
+<p>2)<strong>免费域名</strong>：免费网站，很多已经被薅羊毛薅到关门了，剩下可搜索到的几个网站，也不容易注册了。</p>
+<p>截止目前，还可以去<a target="_blank" rel="noopener" href="https://register.us.kg/"><strong>us.kg</strong></a>这个网站试试，每个用户可以申请3个免费域名。之前被滥用的厉害，于是从24年10月开始，注册要求KYC。如果注册邮箱符合要求、或有github账号，可以免KYC。</p>
+<h3 id="私有域名托管到Cloudflare"><a href="#私有域名托管到Cloudflare" class="headerlink" title="私有域名托管到Cloudflare"></a>私有域名托管到Cloudflare</h3><p>有了自己的域名后，可以把域名托管到Cloudflare，而<a target="_blank" rel="noopener" href="https://register.us.kg/">us.kg</a>支持cloudflare托管。</p>
+<p><a target="_blank" rel="noopener" href="https://register.us.kg/">us.kg</a>注册 + <a target="_blank" rel="noopener" href="https://www.cloudflare.com/">cloudflare</a>绑定域名，具体步骤可参考下方文章：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.linyafeng.com/archives/2147/">可以免费申请的域名us.kg,从域名注册到托管到Cloudflare全流程保姆教程</a></li>
+</ul>
+<h3 id="解析私有域名"><a href="#解析私有域名" class="headerlink" title="解析私有域名"></a>解析私有域名</h3><p>上述推荐文章，没有讲解在cloudflare解析私有域名的步骤，下一章节我会补充。</p>
+<h2 id="本地搭建Hexo-Github-Pages托管"><a href="#本地搭建Hexo-Github-Pages托管" class="headerlink" title="本地搭建Hexo + Github Pages托管"></a>本地搭建Hexo + Github Pages托管</h2><hr>
+<h3 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h3><h4 id="1）可参考Hexo官方文档："><a href="#1）可参考Hexo官方文档：" class="headerlink" title="1）可参考Hexo官方文档："></a>1）可参考Hexo官方文档：</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-tw/docs/">Hexo文档</a></li>
+</ul>
+<h4 id="2）或者参考下方网友文章："><a href="#2）或者参考下方网友文章：" class="headerlink" title="2）或者参考下方网友文章："></a>2）或者参考下方网友文章：</h4><ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.duheweb.com/post/20210417143744.html">GitHub Pages + Hexo + NexT + 自定义域名搭建永久有效的个人博客网站并进行SEO优化</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://yushuaige.github.io/2020/12/31/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2(%E4%B8%80)%E2%80%94%E2%80%94%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAhexo%E6%A1%86%E6%9E%B6/">从零开始免费搭建自己的博客</a> (这个博客长时间未更新，文章内的链接失效，可以从侧边栏的“归档”查看)</p>
+</li>
+</ul>
+<h4 id="3）或者参考YouTube视频："><a href="#3）或者参考YouTube视频：" class="headerlink" title="3）或者参考YouTube视频："></a>3）或者参考YouTube视频：</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=WJk765ztHUg">十分鐘小魔法 - 不需要寫程式也不用花錢，10 分鐘架設出專屬於自己的部落格，建立個人品牌 | 使用 Hexo + GitHub</a></li>
+</ul>
+<p><strong>如果你对git不熟悉，建议以YouTube视频介绍的方法为主，使用Github Desktop操作文章部署及发布（我也选了此方案）。</strong></p>
+<p>💡<strong>Hexo的一些常用命令行：</strong></p>
+<p><img src="https://images.aiquicklearn.us.kg/imgs/202412/hexo.png" alt="hexo"></p>
+<h3 id="问题-安装Hexo的权限不足"><a href="#问题-安装Hexo的权限不足" class="headerlink" title="问题-安装Hexo的权限不足"></a>问题-安装Hexo的权限不足</h3><p>我用的macos，可能系统比较旧，在搭建Hexo的过程中，一直出问题。</p>
+<p>在使用终端输入以下安装<code>npm install -g hexo-cli</code>指令时，由于<code>-g</code>表示全局安装，引起权限问题，一直提示下图错误【Error: EACCES: permission denied, access ‘&#x2F;usr&#x2F;local&#x2F;lib&#x2F;node_modules’】，如下图所示：</p>
+<p><img src="https://images.aiquicklearn.us.kg/imgs/202412/issue1.png" alt="issue1"></p>
+<p>搜索后，发现比较多网友都是在命令前加上<code>sudo</code>来解决，但这个方法有点不妥，最后找到Stackoverflow论坛的一篇帖子，参考了第二楼回复的方案👇：</p>
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/48910876/error-eacces-permission-denied-access-usr-local-lib-node-modules"> Error: EACCES: permission denied, access ‘&#x2F;usr&#x2F;local&#x2F;lib&#x2F;node_modules’</a></p>
+<p><img src="https://images.aiquicklearn.us.kg/imgs/202412/solution1.png" alt="solution1"></p>
+<p>打开终端后，直接按以上5个步骤，输入对应命令即可。在第3步，需要手工创建文件、打开文件，直接输入下图中其他网友补充的命令行<code>touch .profile</code>,<code>open .profile</code>：</p>
+<p><img src="https://images.aiquicklearn.us.kg/imgs/202412/solution2.png" alt="solution2"></p>
+<p>以上方案操作后，重新执行Hexo安装命令，成功🎉</p>
+<p><img src="https://images.aiquicklearn.us.kg/imgs/202412/solution3.png" alt="solution3"></p>
+<p>上图可以看到，Hexo安装成功后，执行hexo命令，可能会找不到，可以在命令前都加上<code>npx</code></p>
+<h3 id="私有域名解析、并关联到Github域名"><a href="#私有域名解析、并关联到Github域名" class="headerlink" title="私有域名解析、并关联到Github域名"></a>私有域名解析、并关联到Github域名</h3><p>⬇️这篇文章的第5节有详细说明怎么操作，但由于该博主用的不是us.kg和cloudflare，所以在此补充下怎么设置：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.duheweb.com/post/20210417143744.html">GitHub Pages + Hexo + NexT + 自定义域名搭建永久有效的个人博客网站并进行SEO优化</a></li>
+</ul>
+<h4 id="1）找到github的4个域名IP（Github官方文档）"><a href="#1）找到github的4个域名IP（Github官方文档）" class="headerlink" title="1）找到github的4个域名IP（Github官方文档）"></a>1）找到github的4个域名IP（<a target="_blank" rel="noopener" href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">Github官方文档</a>）</h4><p><img src="https://images.aiquicklearn.us.kg/imgs/202412/cloudflare-0.png" alt="cloudflare-0"></p>
+<h4 id="2）登陆Cloudflare操作"><a href="#2）登陆Cloudflare操作" class="headerlink" title="2）登陆Cloudflare操作"></a>2）登陆Cloudflare操作</h4><ul>
+<li>进入主页面，在“name”下，找到你已经绑定好cloudflare的私有域名，点击进入私有域名的配置页面</li>
+</ul>
+<p><img src="https://images.aiquicklearn.us.kg/imgs/202412/cloudflare-1.png" alt="cloudflare-1"></p>
+<ul>
+<li><p>按下图1点击“DNS-Records(记录)“，按下图2的方法添加5条DNS记录即可</p>
+<p><img src="https://images.aiquicklearn.us.kg/imgs/202412/cloudflare-2.png" alt="cloudflare-2"></p>
+</li>
+</ul>
+<center>图1</center>
+
+<p><img src="https://images.aiquicklearn.us.kg/imgs/202412/cloudflare-3.png" alt="cloudflare-3"></p>
+<center>图2</center>
+
+
+
+<h2 id="安装Hexo主题-NexT"><a href="#安装Hexo主题-NexT" class="headerlink" title="安装Hexo主题-NexT"></a>安装Hexo主题-NexT</h2><hr>
+<p>打算用Homebrew来安装NexT（发现都推荐Homebrew在macos安装软件），首先安装Homebrew。遇到了以下问题1-4。</p>
+<h3 id="问题1-Github的DNS被污染，无法连接"><a href="#问题1-Github的DNS被污染，无法连接" class="headerlink" title="问题1-Github的DNS被污染，无法连接"></a>问题1-Github的DNS被污染，无法连接</h3><p>执行安装Homebrew的指令时，会因网络不能直接访问github报错⬇️：<br><strong>报错</strong>：【curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused】</p>
+<p>搜索后，发现是Github的DNS存在污染，需要手动修改电脑本地的hosts👇：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/hawtim/hawtim.github.io/issues/10">Github网友提供的解决方案</a></li>
+</ul>
+<p>如果不知道怎么通过终端修改hosts，可以点击查看这个修改方法👇：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://mrmad.com.tw/mac-os-x-hosts">mac修改hosts檔案超輕鬆編輯2種實用技巧</a>】</li>
+</ul>
+<h3 id="问题2-Github的DNS被污染，无法连接"><a href="#问题2-Github的DNS被污染，无法连接" class="headerlink" title="问题2-Github的DNS被污染，无法连接"></a>问题2-Github的DNS被污染，无法连接</h3><p>问题1解决后，接着，又遇到2个报错：</p>
+<p><strong>报错1</strong>：【error: RPC failed; curl 92 HTTP&#x2F;2 stream 0 was not closed cleanly: PROTOCOL_ERROR (err 1)】</p>
+<p><strong>报错2</strong>:【PC failed; curl 18 transfer closed with outstanding read data remaining error: 7721 bytes of body are still expected】</p>
+<p>接着找解决方法，在Stackflow论坛找到下方帖子👇：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/59282476/error-rpc-failed-curl-92-http-2-stream-0-was-not-closed-cleanly-protocol-erro">error: RPC failed; curl 92 HTTP&#x2F;2 stream 0 was not closed cleanly: PROTOCOL_ERROR (err 1)</a></li>
+</ul>
+<p>用了帖子中的这个建议⬇️：</p>
+<p><img src="https://images.aiquicklearn.us.kg/imgs/202412/homeb-2-1.png" alt="homeb-2-1"></p>
+<p>打开终端，执行上述2条命令后，<code>git config --global http.version HTTP/1.1</code>，<code>git config --global http.version HTTP/2</code>，效果⬇️：</p>
+<p><img src="https://images.aiquicklearn.us.kg/imgs/202412/homeb-2-2-5214861.png" alt="homeb-2-2"></p>
+<h3 id="问题3-缺少Xcrun的Command-Line-Tools"><a href="#问题3-缺少Xcrun的Command-Line-Tools" class="headerlink" title="问题3-缺少Xcrun的Command Line Tools"></a>问题3-缺少Xcrun的Command Line Tools</h3><p>继续执行命令，接着又报错，缺少【xcrun: error: invalid active developer path (&#x2F;Library&#x2F;Developer&#x2F;CommandLineTools), missing xcrun at：&#x2F;……&#x2F;xcrun】</p>
+<p>解决方案大部分都建议安装Xcode，但Xcode太大了（几个G），继续搜，发现可以只安装Command Line Tools（实际也要1个G左右），按以下文章介绍的方法安装</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://mrmad.com.tw/mac-os-x-hosts">MacOS升級 missing xcrun</a></li>
+</ul>
+<h3 id="问题4-还是无法安装Homebrew"><a href="#问题4-还是无法安装Homebrew" class="headerlink" title="问题4-还是无法安装Homebrew"></a>问题4-还是无法安装Homebrew</h3><p>解决上述问题后，还是无法安装Homebrew，看终端报错，一些包下载特别慢，最后整个安装超时断掉了，得从头再来。</p>
+<p>但其实网络正常的，在耗费很多时间后，决定放弃Homebrew，回到NexT官网，尝试用git。</p>
+<p>为什么之前不用git？因为不会用🤦，所以最开始安装Hexo时，按前述的YouTube视频选择了GitHub Desktop。</p>
+<p>但在解决本章的问题2时，发现可以用git了，神奇，猜测可能：1）在后续配置网站过程中，因为VS code有提醒安装git，可能误点击了；2）因为装了Command Line Tools）。</p>
+<p>于是，打开终端，cd到博客网站文件夹，改用git命令安装NexT<code>git clone https://github.com/next-theme/hexo-theme-next themes/next</code>，中间报错了一次，但继续执行，最后成功⬇️</p>
+<p><img src="https://images.aiquicklearn.us.kg/imgs/202412/homeb-4.png" alt="homeb-4"></p>
+<p>💡<strong>用git安装的NexT文件夹(next)直接放在【博客网站根目录-themes】下</strong></p>
+<h2 id="配置NexT"><a href="#配置NexT" class="headerlink" title="配置NexT"></a>配置NexT</h2><hr>
+<h3 id="问题1-NexT取消了支持评论插件Valine"><a href="#问题1-NexT取消了支持评论插件Valine" class="headerlink" title="问题1-NexT取消了支持评论插件Valine"></a>问题1-NexT取消了支持评论插件Valine</h3><p>NexT有4个主题可供选择，支持自定义配置。在参考了NexT官方文档、以及各网友文章后，一通配置操作下来，结果在执行<code>npx hexo server</code>时，报错了（可以肯定配置出了问题，因为已多次执行过）：</p>
+<p><strong>报错：</strong>【TypeError: Cannot read properties of undefined (reading ‘enable’) </p>
+<p>​     at C:\……\themes\next\scripts\filters\comment\valine.js:11:21】</p>
+<p>又一通搜索，找到了一个Github网友的解决方案👇：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/richardmyu/blog/issues/17">Hexo 搭建博客问题#17</a></li>
+</ul>
+<p><img src="https://images.aiquicklearn.us.kg/imgs/202412/next-1.png" alt="next-1"></p>
+<h3 id="问题2-本地localhost查看页面变空白"><a href="#问题2-本地localhost查看页面变空白" class="headerlink" title="问题2-本地localhost查看页面变空白"></a>问题2-本地localhost查看页面变空白</h3><p>解决后，继续一通配置，但发现配置后整个网站页面又空白了，一时半会找不到解决方案（包括尝试执行命令<code>npx hexo clean</code>），<u>也不想继续折腾（划重点）</u>，于是，直接删除了【博客网站根目录-themes】路径下的next文件夹，重新安装NexT。</p>
+<p>此时，又突发奇想，用NexT官方的npm命令执行<code>npm install hexo-theme-next</code>，发现NexT的文件夹，放到了【博客网站根目录-node_modules】路径下，文件名也变成了“hexo-theme-next”。</p>
+<p>重新执行<code>npx hexo clean</code>，<code>npx hexo server</code>，成功！可以通过“localhost:4000&#x2F;”本地访问文章了。</p>
+<p>而执行这个过程中，发现终端命令的返回结果有了变化，多了下图中的NexT版本号、Logo等⬇️</p>
+<p><img src="https://images.aiquicklearn.us.kg/imgs/202412/next-2.png" alt="next-2"></p>
+<p><strong>合理怀疑git方式安装的不是最新的NexT。</strong></p>
+<p>如何自定义配置NexT，可参考以下文章，官方文档也很详细建议看看，网友文章也有参考价值（有些文章比较久了，需斟酌并对比做参考）</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/">NexT Docs</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.duheweb.com/post/20210417143744.html">GitHub Pages + Hexo + NexT + 自定义域名搭建永久有效的个人博客网站并进行SEO优化</a></li>
+<li><a target="_blank" rel="noopener" href="https://yushuaige.github.io/2020/12/31/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2(%E4%B8%80)%E2%80%94%E2%80%94%E6%9C%AC%E5%9C%B0%E6%90%AD%E5%BB%BAhexo%E6%A1%86%E6%9E%B6/">从零开始免费搭建自己的博客</a></li>
+<li><a target="_blank" rel="noopener" href="https://bambrow.com/20200719-hexo-next-new-features/">Hexo NexT 更多功能设置</a></li>
+</ul>
+<blockquote>
+<p>不是所有配置都要一步到位配置好，一开始我是这么想的，所以一通配置搞个不停，后来发现，新手小白要有个熟悉过程，一步到位难度大，不然耗费时间、消磨意志。</p>
+<p>⚠️更重要的是，内容比形式重要，先慢慢写起来，毕竟能坚持写下来已殊为不易！</p>
+<p>待博客访问人数多了，再考虑评论留言、多语言切换、SEO优化等等更多客制化功能、甚至搭建服务器承载更多流量。</p>
+</blockquote>
+<h2 id="使用Typora-PicGo配置图片自动上传"><a href="#使用Typora-PicGo配置图片自动上传" class="headerlink" title="使用Typora+PicGo配置图片自动上传"></a>使用Typora+PicGo配置图片自动上传</h2><hr>
+<p>虽然还不能实现博客自动化部署发布，但手动的情况下，提前考虑到了图片上传到问题。</p>
+<p>因此，考虑到Github免费用户空间有限，且已注册了免费域名us.kg，参考了下方文章的第二个方法【用独立的二级域名设置图片URL】，用Typora+PicGo实现图片自动上传👇</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.duheweb.com/post/20210421125522.html">GitHub Pages + PicGo + Typora + 自定义域名搭建免费图床</a></li>
+</ul>
+<p>⚠️这篇文章时间比较久远，需要注意一点，在登陆github后生成token时，应该选择Tokens(classic)⬇️</p>
+<p><img src="https://images.aiquicklearn.us.kg/imgs/202412/PicGo.png" alt="PicGo"></p>
+<p>💡Typora的Markdown语法，跟原生markdown有点点不同，如果从来没有学过markdown，可以参考Typora官方文档，同时其他文章也可供参考：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://support.typoraio.cn/zh/Markdown-Reference/">Typora官方写作语法文档-中文版</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/hider/p/11614688.html">Typora入门指南：全网最全教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://sspai.com/post/40524">使用 Typora 一次性搞定公众号写作与排版</a></li>
+</ul>
+<blockquote>
+<p><strong>至此，本博客网站搭建和配置，告一段落。</strong></p>
+<p><strong>后续有新的配置了，会继续更新。</strong></p>
+<p><strong>对于本篇内容，如果有疑问，欢迎邮件讨论沟通哦（还没有评论留言功能）。</strong></p>
+</blockquote>
+<center>——The End——</center>
+
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>APersonWhoLovesAI
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="http://aiquicklearn.us.kg/post/20241226115946.html" title="Build Records of Blog Created by Hexo+Github Pages+Next">http://aiquicklearn.us.kg/post/20241226115946.html</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
+              <a href="/tags/NexT/" rel="tag"><i class="fa fa-tag"></i> NexT</a>
+              <a href="/tags/Github/" rel="tag"><i class="fa fa-tag"></i> Github</a>
+              <a href="/tags/Cloudflare/" rel="tag"><i class="fa fa-tag"></i> Cloudflare</a>
+              <a href="/tags/us-kg/" rel="tag"><i class="fa fa-tag"></i> us.kg</a>
+              <a href="/tags/Blog/" rel="tag"><i class="fa fa-tag"></i> Blog</a>
+          </div>
+
+        
+
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">APersonWhoLovesAI</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
